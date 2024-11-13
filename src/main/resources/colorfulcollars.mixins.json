@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "mypals.ml.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CatEntityMixin",
+    "WolfEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "CatCollarFeatureRendererMixin",
+    "CatEntityRendererMixin",
+    "CatEntityRenderStateMixin",
+    "WolfCollarFeatureRendererMixin",
+    "WolfEntityRendererMixin",
+    "WolfEntityRenderStateMixin"
+  ]
+}
