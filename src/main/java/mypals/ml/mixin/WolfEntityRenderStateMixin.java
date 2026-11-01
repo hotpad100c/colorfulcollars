@@ -1,13 +1,13 @@
 package mypals.ml.mixin;
 
 import mypals.ml.interfaces.IWolfEntityRenderStateMixin;
-import net.minecraft.client.render.entity.state.WolfEntityRenderState;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.client.renderer.entity.state.WolfRenderState;
+import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
 
-@Mixin(WolfEntityRenderState.class)
+@Mixin(WolfRenderState.class)
 public abstract class WolfEntityRenderStateMixin implements IWolfEntityRenderStateMixin {
 
     @Unique
