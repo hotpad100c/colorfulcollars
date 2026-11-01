@@ -1,13 +1,13 @@
 package mypals.ml.mixin;
 
 import mypals.ml.interfaces.ICatEntityRenderStateMixin;
-import net.minecraft.client.render.entity.state.CatEntityRenderState;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.client.renderer.entity.state.CatRenderState;
+import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
 
-@Mixin(CatEntityRenderState.class)
+@Mixin(CatRenderState.class)
 public abstract class CatEntityRenderStateMixin implements ICatEntityRenderStateMixin {
 
     @Unique
